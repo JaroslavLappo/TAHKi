@@ -421,8 +421,8 @@ function SetUpServer() {
     Serverhandler();
     app.use(exp.static('../client'));
 
-    http.listen(3000, function () {
-        console.log('listening on *:3000(80)');
+    http.listen(process.env.PORT || 8080, function () {
+        console.log('listening on *:' + (process.env.PORT || 8080).toString());
     });
 }
 
@@ -434,6 +434,6 @@ function Main() {
     });
 }
 
-if (require.main === module) {
+//if (require.main === module) {
     Main();
-}
+//}
