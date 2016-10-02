@@ -2,7 +2,7 @@
   "name": "TAHKi",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "Server/Main.js",
   "dependencies": {
     "express": "4.13.4",
     "socket.io": "1.4.6",
